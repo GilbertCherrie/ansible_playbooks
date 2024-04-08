@@ -3,7 +3,7 @@
 - name: Echo Hello, world!
   hosts: localhost
   vars:
-    testArray: ['zero\x1Fone\x1Ftwo']
+    testArray: "zero"\x1"Fone"\x1F"two"
 
   tasks:
   - debug: msg="Hello, world!"
