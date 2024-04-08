@@ -2,12 +2,14 @@
 # This playbook prints a simple debug message
 - name: Echo Hello, world!
   hosts: localhost
+  vars:
+    testArray: ['zero', 'one', 'two']
 
   tasks:
   - debug: msg="Hello, world!"
   - debug: var=test1
   - debug: var=test2
-  - debug: msg=['zero', 'one', 'two']
+  - debug: msg="{{ testArray }}"
   - debug: var=hosts
   - debug: var=miq_data
   - debug: var=vars
