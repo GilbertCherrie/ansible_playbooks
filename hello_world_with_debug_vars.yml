@@ -5,7 +5,8 @@
 
   tasks:
   - debug: msg="Hello, world!"
-  - debug: var=test
+  - debug: var=test1
+  - debug: var=test2
   - debug: var=hosts
   - debug: var=miq_data
   - debug: var=vars
