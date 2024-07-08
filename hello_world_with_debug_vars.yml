@@ -9,6 +9,8 @@
   - debug: msg="Hello, world!"
   - debug: var=test1
   - debug: var=test2
+  - debug: var=test3
+  - debug: var=test4
   - debug: msg="{{ testArray }}"
   - debug: var=hosts
   - debug: var=miq_data
