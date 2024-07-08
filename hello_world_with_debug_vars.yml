@@ -4,6 +4,7 @@
   hosts: localhost
   vars:
     testArray: "zero\x1Fone\x1Ftwo"
+    cluster_name: '{{cluster_name}}'
 
   tasks:
   - debug: msg="Hello, world!"
@@ -11,6 +12,7 @@
   - debug: var=test2
   - debug: var=test3
   - debug: var=test4
+  - debug: var=cluster_name1
   - debug: msg="{{ testArray }}"
   - debug: var=hosts
   - debug: var=miq_data
