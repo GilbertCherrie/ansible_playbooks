@@ -14,6 +14,7 @@
   - debug: var=test4
   - debug: var=cluster_name1
   - debug: msg="{{ testArray }}"
+  - debug: msg="{{ cluster_name }}"
   - debug: var=hosts
   - debug: var=miq_data
   - debug: var=vars
